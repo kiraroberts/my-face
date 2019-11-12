@@ -3,25 +3,25 @@ import Button from './Button';
 import Search from './Search';
 
 var homeButton = {
-    buttonName: 'Home'
-}
+  buttonName: 'Home'
+};
 var notesButton = {
-    buttonName: 'Notifications'
-}
+  buttonName: 'Notifications'
+};
 var msgButton = {
-    buttonName: 'Messages'
-}
+  buttonName: 'Messages'
+};
 
 
 function Header(){
-    return (
-        <div>
-            <Button buttonName={homeButton.buttonName}/>
-            <Button buttonName={notesButton.buttonName}/>
-            <Button buttonName={msgButton.buttonName}/>
-            <Search/>
-        </div>
-    );
+  return (
+    <div>
+      <Button buttonName={homeButton.buttonName}/>
+      <Button buttonName={notesButton.buttonName}/>
+      <Button buttonName={msgButton.buttonName}/>
+      <Search/>
+    </div>
+  );
 }
 
 export default Header;

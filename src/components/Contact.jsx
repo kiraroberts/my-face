@@ -3,16 +3,16 @@ import ProfileDetails from './ProfileDetails';
 import Button from './Button';
 
 var button = {
-    buttonName: 'Add Me'
-}
+  buttonName: 'Add Me'
+};
 function Contact(details){
-    return(
-        <div>
-            <ProfileDetails name={details.name}
-            image={details.image}/>
-            <Button buttonName = {button.buttonName}/>
-        </div>
-    );
+  return(
+    <div>
+      <ProfileDetails name={details.name}
+        image={details.image}/>
+      <Button buttonName = {button.buttonName}/>
+    </div>
+  );
 }
 
 
