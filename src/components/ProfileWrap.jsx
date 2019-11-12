@@ -10,12 +10,22 @@ var profData = {
 
 };
 
-
 function ProfileWrap(){
+  var borderStyle = {
+    borderStyle: 'solid',
+    borderWidth: '1px',
+    borderColor: 'grey',
+    padding: '5px',
+    margin: '5px'
+  };
   return (
     <div>
-      <Profile bgImg={profData.bgImage} name={profData.name} profImage={profData.profImage}/>
-      <About content={profData.about}/>
+      <div style={borderStyle}>
+        <Profile bgImg={profData.bgImage} name={profData.name} profImage={profData.profImage} />
+      </div>
+      <div style={borderStyle}>
+        <About content={profData.about} />
+      </div>
     </div>
   );
 }

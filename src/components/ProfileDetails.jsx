@@ -5,7 +5,10 @@ function ProfileDetails(props){
   var imageStyles = {
     width: '100px',
     height: 'auto',
+    maxHeight: '120px',
     margin: '10px',
+    objectFit: 'cover',
+    objectPosition: '-50% -50%',
     float: 'left'
   };
 

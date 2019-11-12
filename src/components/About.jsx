@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 function About(prop){
   return(
-    <p>{prop.content}</p>
+    <div>
+      <p>{prop.content}</p>
+    </div>
   );
 }
 

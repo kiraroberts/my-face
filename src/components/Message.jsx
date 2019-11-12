@@ -8,6 +8,7 @@ function Message(props){
     <div>
       <ProfileDetails name={props.name} image={props.img} />
       <About content={props.content}/>
+      <hr/>
     </div>
   );
 }

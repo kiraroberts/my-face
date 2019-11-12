@@ -10,12 +10,15 @@ function Profile(profData){
   var aDivStyle = {
     clear: 'left'
   };
+  var profDetailsStyle = {
+
+  };
 
   return (
     <div>
       <div>
         <BackgroundImg source={profData.bgImg} />
-        <ProfileDetails name={profData.name} image={profData.profImage} />
+        <ProfileDetails name={profData.name} image={profData.profImage} style={profDetailsStyle}/>
       </div>
       <div style={aDivStyle}>
         <a href='' style={aStyles}>Chirps</a>
