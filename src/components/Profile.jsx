@@ -4,14 +4,23 @@ import BackgroundImg from './BackgroundImg';
 import PropTypes from 'prop-types';
 
 function Profile(profData){
+  var aStyles = {
+    margin: '5px'
+  };
+  var aDivStyle = {
+    clear: 'left'
+  };
+
   return (
     <div>
-      <BackgroundImg source={profData.bgImg} />
-      <ProfileDetails name={profData.name} image={profData.profImage} />
       <div>
-        <a href=''>Chirps</a>
-        <a href=''>Following</a>
-        <a href=''>Leading</a>
+        <BackgroundImg source={profData.bgImg} />
+        <ProfileDetails name={profData.name} image={profData.profImage} />
+      </div>
+      <div style={aDivStyle}>
+        <a href='' style={aStyles}>Chirps</a>
+        <a href='' style={aStyles}>Following</a>
+        <a href='' style={aStyles}>Leading</a>
       </div>
     </div>
   );

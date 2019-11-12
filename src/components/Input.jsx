@@ -4,7 +4,7 @@ function Input(){
   return (
     <div>
       <form>
-        <input type='text' placeholder="What/'s chirp'n?"/>
+        <input type='text' placeholder="What's chirp'n?"/>
       </form>
     </div>
   );

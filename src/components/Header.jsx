@@ -14,12 +14,21 @@ var msgButton = {
 
 
 function Header(){
+  var searchStyle = {
+    float: 'right'
+  };
+
   return (
     <div>
-      <Button buttonName={homeButton.buttonName}/>
-      <Button buttonName={notesButton.buttonName}/>
-      <Button buttonName={msgButton.buttonName}/>
-      <Search/>
+      <div>
+        <Button buttonName={homeButton.buttonName}/>
+        <Button buttonName={notesButton.buttonName}/>
+        <Button buttonName={msgButton.buttonName}/>
+        <div style={searchStyle}>  
+          <Search />
+        </div>
+      </div>
+
     </div>
   );
 }

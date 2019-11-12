@@ -1,9 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-type';
+import PropTypes from 'prop-types';
 
 function Image(prop){
+  var imageStyles = {
+    width: '500px',
+    height: 'auto'
+  };
   return(
-    <img src={prop.source}/>
+    <img src={prop.source} style={imageStyles}/>
   );
 }
 
