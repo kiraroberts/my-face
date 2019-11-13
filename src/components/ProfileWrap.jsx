@@ -18,6 +18,7 @@ function ProfileWrap(){
     padding: '5px',
     margin: '5px'
   };
+
   return (
     <div>
       <div style={borderStyle}>

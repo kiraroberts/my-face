@@ -5,20 +5,29 @@ import PropTypes from 'prop-types';
 
 function Profile(profData){
   var aStyles = {
-    margin: '5px'
+    marginRight: '8px'
   };
   var aDivStyle = {
-    clear: 'left'
+    clear: 'left',
+    marginTop: '70px'
   };
-  var profDetailsStyle = {
+  var bgImgStyle = {
+    position: 'absolute',
+    bottom: '-75px',
+  };
 
-  };
+  var parentStyle = {
+    position: 'relative'
+  }
+
 
   return (
     <div>
-      <div>
+      <div style={parentStyle}>
         <BackgroundImg source={profData.bgImg} />
-        <ProfileDetails name={profData.name} image={profData.profImage} style={profDetailsStyle}/>
+        <div style={bgImgStyle}> 
+          <ProfileDetails name={profData.name} image={profData.profImage}/>
+        </div>
       </div>
       <div style={aDivStyle}>
         <a href='' style={aStyles}>Chirps</a>

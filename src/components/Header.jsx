@@ -23,19 +23,30 @@ function Header(){
   };
   var buttonStyle = {
     display: 'inline-block',
-    borderStyle: 'solid',
-    borderColor: 'grey',
-    borderWidth: '1px',
     padding: '8px'
   };
   var buttonPadding = {
-    padding: '10px'
+    padding: '10px',
+    float: 'left'
   };
   var clearFloat = {
     clear: 'right'
   };
+  var header = {
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    clear: 'left',
+    margin: '0'
+  }
+  var centerText = {
+    textAlign: 'center'
+  }
+  var lessMargin = {
+    margin: '0'
+  }
+
   return (
-    <div>
+    <div style={centerText}>
       <div>
         <div style={buttonPadding}>
           <div style={buttonStyle}>
@@ -47,11 +58,17 @@ function Header(){
           <div style={buttonStyle}>
             <Button buttonName={msgButton.buttonName}/>
           </div>
-          <div style={searchStyle}>  
-            <Search />
-          </div>
         </div>
-        
+
+        <div style={header}>
+          <h1 style={lessMargin}>
+            My Face!
+          </h1>
+        </div>
+
+        <div style={searchStyle}>  
+          <Search />
+        </div>
       </div>
       <hr style={clearFloat}/>
     </div>

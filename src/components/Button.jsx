@@ -2,12 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Button(prop){
-  var removeBorder = {
-    border: 'none',
-    backgroundColor: 'transparent'
-  };
+
   return(
-    <button style={removeBorder}>{prop.buttonName}</button>
+    <button className='btn btn-info' >{prop.buttonName}</button>
   );
 }
 

@@ -1,11 +1,14 @@
 import React from 'react';
 
 function Search(){
+  var margin = {
+    marginRight: '10px'
+  }
   return (
     <div>
       <form>
-        <input type='text' placeholder='Search'></input>
-        <button type='submit'>Chirp</button>
+        <input style={margin}type='text' placeholder='Search'></input>
+        <button  className='btn btn-info' type='submit'>Chirp</button>
       </form>
     </div>
   );

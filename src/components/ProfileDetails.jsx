@@ -9,12 +9,12 @@ function ProfileDetails(props){
     margin: '10px',
     objectFit: 'cover',
     objectPosition: '-50% -50%',
-    float: 'left'
+    
   };
 
   var divStyles = {
     display: 'inline-block',
-    marginTop: '50px'
+    verticalAlign: 'middle'
   };
 
   return(
