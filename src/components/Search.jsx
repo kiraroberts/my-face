@@ -3,7 +3,7 @@ import React from 'react';
 function Search(){
   var margin = {
     marginRight: '10px'
-  }
+  };
   return (
     <div>
       <form>

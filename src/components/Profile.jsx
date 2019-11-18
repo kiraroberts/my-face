@@ -18,7 +18,7 @@ function Profile(profData){
 
   var parentStyle = {
     position: 'relative'
-  }
+  };
 
 
   return (

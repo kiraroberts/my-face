@@ -4,7 +4,11 @@ import Profile from './ProfileWrap';
 import Contact from './ContactWrap';
 import Message from './MessageWrap';
 
-function App(){
+function App() {
+
+  const username = 'Georgina Marveloso';
+  const profImage = 'https://s.blogcdn.com/slideshows/images/slides/357/674/1/S3576741/slug/l/katehudson-2.jpg';
+  
   var msgWidthStyle = {
     width: '40%'
   };
@@ -20,6 +24,7 @@ function App(){
     backgroundColor: '#d0f0f5',
     height: '1600px'
   };
+
   return(
     <div style={bgColor}>
       <div>
@@ -29,10 +34,10 @@ function App(){
         <tbody>
           <tr>
             <td style={align}>
-              <Profile/>
+              <Profile name={username} profImage={profImage} />
             </td>
             <td style={Object.assign(msgWidthStyle, align)}>
-              <Message/>
+              <Message name={username} img={profImage}/>
             </td>
             <td style={Object.assign(contactWidthStyle, align)}>
               <Contact/>

@@ -37,13 +37,13 @@ function Header(){
     verticalAlign: 'middle',
     clear: 'left',
     margin: '0'
-  }
+  };
   var centerText = {
     textAlign: 'center'
-  }
+  };
   var lessMargin = {
     margin: '0'
-  }
+  };
 
   return (
     <div style={centerText}>
