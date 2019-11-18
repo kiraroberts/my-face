@@ -30,8 +30,10 @@ class MessageWrap extends React.Component {
   }
 
   handleNewChirpMessageCreation(newMessage) {
-    var newMasterMessageList = this.state.masterMessageList.slice();
+    var newMasterMessageList = [];
     newMasterMessageList.push({name: this.props.name, img: this.props.img, content: newMessage.input});
+    var currentMasterList = this.state.masterMessageList.slice();
+    newMasterMessageList = newMasterMessageList.concat(currentMasterList);
     this.setState({ masterMessageList: newMasterMessageList });
   }
 
