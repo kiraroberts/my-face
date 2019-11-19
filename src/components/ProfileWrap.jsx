@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Profile from './Profile';
 import About from './About';
+import FriendsList from './FriendsList';
 
 var profData = {
   bgImage: 'https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2018/06/make_impossible_possible_adobe_stock_final_lead_0.jpg',
@@ -26,13 +27,17 @@ function ProfileWrap(props){
       <div style={borderStyle}>
         <About content={profData.about} />
       </div>
+      <div>
+        <FriendsList friendsList={props.friendsList}/>
+      </div>
     </div>
   );
 }
 
 ProfileWrap.propTypes = {
   name: PropTypes.string,
-  profImage: PropTypes.string
+  profImage: PropTypes.string,
+  friendsList: PropTypes.array
 };
 
 export default ProfileWrap;

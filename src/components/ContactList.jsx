@@ -1,26 +1,12 @@
 import React from 'react';
 import Contact from './Contact';
+import PropTypes from 'prop-types';
 
-var masterContactList = [
-  {
-    name: 'Andy',
-    image: 'https://iso.500px.com/wp-content/uploads/2015/03/business_cover.jpeg'
-  },
-  {
-    name: 'Dorothy',
-    image: 'https://c8.alamy.com/comp/EAKDHA/portrait-of-a-little-girl-with-hat-posing-as-a-gangster-EAKDHA.jpg'
-  },
-  {
-    name: 'Gertrude',
-    image: 'https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e.jpg'
-  }
-];
-
-function ContactList(){
+function ContactList(props){
   return(
     <div>
       <hr/>
-      {masterContactList.map((contact, index) => 
+      {props.masterContactList.map((contact, index) => 
         <Contact name={contact.name}
           image={contact.image}
           key={index}/>
@@ -28,6 +14,10 @@ function ContactList(){
       )}
     </div>
   );
+}
+
+ContactList.propTypes={
+  masterContactList: PropTypes.array
 }
 
 export default ContactList;
